@@ -1,0 +1,97 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Ball Generator</title>
+	<link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+
+	<form id="panel" onsubmit="return false;">
+		<h1>Ball factory</h1>
+
+		<h2>Customize your Ball:</h2>
+
+		<div id="ball-preview">
+
+
+		</div>
+
+		
+
+		<fieldset>
+
+			<fieldset>
+				<label>Color:
+					<input id="ball-color" type="color">
+				</label>
+
+			<label>Movement:
+
+				<select id="ball-movement">
+					<option value="bounce">Bounce</option>
+					<option value="dejavu">Deja vu</option>
+				</select>
+			</label>	
+
+
+		</fieldset>
+
+		<fieldset>
+			<label >Width:
+				<input id="ball-width" type="number" value="40" min="1" max="300">
+			</label>
+
+			<label>Height:
+				<input id="ball-height" type="number" value="40" min="1" max="300">
+			</label>
+		</fieldset>
+
+		<fieldset>
+			<label>
+				Speed X:
+				<input id="ball-speedx" type="number" value="12">
+			</label>
+
+			<label>
+				Speed Y:
+				<input id="ball-speedy" type="number" value="13">
+			</label>
+		</fieldset>
+
+		<fieldset>
+			<label>
+				Speed X:
+				<input id="ball-speedx" type="number" value="12">
+			</label>
+
+			<label>
+				Speed Y:
+				<input id="ball-speedy" type="number" value="13">
+			</label>
+		</fieldset>
+
+
+
+		<fieldset>
+			<button id="randomize">
+				Randomize				
+			</button>
+
+			<button id="launch">
+				Launch!				
+			</button>
+		</fieldset>
+
+
+
+	</form>
+
+	<div id="pipe">
+
+	</div>
+
+	<script src="js/basescript.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #FFFFFF;
+$background: #f2e5ff;
+$grey1: #b3a3c2;
+$grey2: #eeeeee;
+
+
+body {
+	font: 100% $font-stack;
+	color: $primary-color;
+	background-color: $background;
+	font-size: 12px;
+
+
+
+	#panel{
+
+
+
+
+		width: 300px;
+		background-color: $grey1;
+		float: right;
+		padding: 10px;
+		border-radius: 4px;
+
+		-moz-box-shadow: 0px 2px 2px 2px #625d62;
+		-webkit-box-shadow: 0px 2px 2px 2px #625d62;
+		box-shadow: 0px 2px 2px 2px #625d62;
+		filter: progid:DXImageTransform.Microsoft.Shadow(strength = 2, direction = 180, color = '#625d62');
+		-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(strength = 2, Direction = 180, Color = '#625d62')";
+
+
+
+
+		fieldset{
+			border:0px;
+			padding: 10px 0px;
+			text-align: center;
+		}
+
+
+		#ball-preview{
+
+			width: 100%;
+			background: $grey2;
+			height: 130px;
+			margin: 10px auto 10px;
+			position: relative;
+
+
+		}
+
+		label{
+			/*display: block;*/
+			display: inline-block;
+			max-width: 100px;
+			text-align: left;
+			vertical-align: top;
+		}
+
+		input{
+			max-width: 100%;
+			display: block;
+			width: 100px;
+		}
+
+		input[type="color"]{
+			height: 35px;
+			background: transparent;
+		}
+
+		#ball-movement{
+			margin-top: 5px;
+			height: 24px;
+		}
+
+		button{
+			border: 0px;
+			background: white;
+			padding: 10px 10px;
+			color: purple;
+			text-transform: uppercase;
+			font-family: Arial;
+			font-size: 16px;
+			font-weight: bold;
+			outline:0px;
+			cursor: pointer;
+		}
+
+
+
+
+	}
+
+
+	#pipe{
+
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#79e055', endColorstr = '#264527');
+		/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+		/*Element must have a height (not auto)*/
+		/*All filters must be placed together*/
+		-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#79e055', endColorstr = '#264527')";
+		/*Element must have a height (not auto)*/
+		/*All filters must be placed together*/
+		background-image: -moz-linear-gradient(top, #79e055, #264527);
+		background-image: -ms-linear-gradient(top, #79e055, #264527);
+		background-image: -o-linear-gradient(top, #79e055, #264527);
+		background-image: -webkit-gradient(linear, center top, center bottom, from(#79e055), to(#264527));
+		background-image: -webkit-linear-gradient(top, #79e055, #264527);
+		background-image: linear-gradient(top, #79e055, #264527);
+		/*--IE9 DOES NOT SUPPORT CSS3 GRADIENT BACKGROUNDS--*/
+		
+		position: absolute;
+		left: 0;
+		top: 50%;
+		margin-top: -50px;
+		width: 200px;
+		height: 100px;
+		
+		
+		&:before{
+
+
+
+		}
+
+		&:after{
+
+			content: "";
+			position: absolute;
+			right: 0;
+			height: 130px;
+			width: 14px;
+			top: -15px;
+
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#79e055', endColorstr = '#264527');
+			/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+			/*Element must have a height (not auto)*/
+			/*All filters must be placed together*/
+			-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#79e055', endColorstr = '#264527')";
+			/*Element must have a height (not auto)*/
+			/*All filters must be placed together*/
+			background-image: -moz-linear-gradient(top, #79e055, #264527);
+			background-image: -ms-linear-gradient(top, #79e055, #264527);
+			background-image: -o-linear-gradient(top, #79e055, #264527);
+			background-image: -webkit-gradient(linear, center top, center bottom, from(#79e055), to(#264527));
+			background-image: -webkit-linear-gradient(top, #79e055, #264527);
+			background-image: linear-gradient(top, #79e055, #264527);
+			/*--IE9 DOES NOT SUPPORT CSS3 GRADIENT BACKGROUNDS--*/
+
+
+		}
+
+
+	}
+
+}

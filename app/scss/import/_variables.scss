@@ -1,0 +1,168 @@
+/**
+ * Global values
+ */
+
+$maxWidth-wrapper: 1280px;
+
+// Brand colors
+$brand-primary: 		#ec661c;
+$brand-secondary: 		#e63b1e;
+$brand-tertiary: 		#e62068;
+$brand-quaternary: 		#981868;
+$brand-quinary: 		#892d87;
+
+
+// Colors
+$color-primary: 		    #702076; // CMS morado oscuro
+$color-secondary: 		    #D1BCD3; // CMS morado intermedio
+$color-tertiary: 		    #E9E2E9; // CMS morado claro  (para los hover)
+/*
+//Colors App
+
+$color-primary: 	        #B00060; // Traductor violeta oscuro
+$color-secondary:	        #E5B3CC; // Traductor violeta intermedio
+$color-tertiary: 	        #F6E6EE; // Traductor violeta claro
+
+$color-primary: 	        #D60056; // Aplicación 3 rosa oscuro
+$color-secondary:	        #F1B3CA; // Aplicación 3 rosa intermedio
+$color-tertiary:         	#FAE6ED; // Aplicación 3 rosa claro
+
+$color-primary: 	        #EB0028; // Aplicación 4 rojo oscuro
+$color-secondary:           #F8B3BE; // Aplicación 4 rojo intermedio
+$color-tertiary:         	#FDE6EA; // Aplicación 4 rojo claro
+
+$color-primary: 	        #FF5000; // Aplicación 5 naranja oscuro
+$color-secondary:	        #ffc8b3; // Aplicación 5 naranja intermedio
+$color-tertiary: 	        #ffede6; // Aplicación 5 naranja claro
+*/
+
+// Grey Colors
+$grey-primary: 		        #4D4D4F; // gris oscuro :: tipografía e iconos
+$grey-secondary: 	        #F9F9F9; // gris bgr admin  :: Pijama y listados
+$grey-tertiary: 	    	#E4E4E4; // gris border admin  :: Líneas listados
+$grey-quaternary: 			#F2F2F2; // gris border admin :: Líneas listados
+
+// Clasic Colors
+$color-black: 		        #000;
+$color-white: 		        #fff;
+$color-transparent: 		transparent;
+
+// Color message success and error.
+$message-success:           #00E322;
+$message-error:             #EB0028;
+
+// Color RRSS
+$color-facebook:            #3b5998;
+$color-twitter:     		#4099FF;
+$color-google_plus: 		#d34836;
+$color-pinterest:   		#C92228;
+$color-youtube:     		#e52d27;
+$color-instagram:   		#231F20;
+
+// Color elements.
+$color-text:                $grey-primary;
+$color-link:                $color-primary;
+$color-hover:               $color-tertiary;
+
+// Background Colors
+$backgroundColor-primary: 	$grey-secondary;
+$backgroundColor-secondary: $color-tertiary;
+$backgroundColor-tertiary: 	$color-tertiary;
+
+// Border Px
+$pixel-primary: 		    1px;
+$pixel-secondary: 			2px;
+$pixel-tertiary: 			3px;
+
+// Border Colors
+$borderColor-primary: 		solid $pixel-primary $grey-tertiary;
+$borderColor-secondary: 	solid $pixel-primary  $grey-quaternary;
+
+// Border Radius
+$borderRadius-primary: 		2px;
+$borderRadius-secondary: 	4px;
+$borderRadius-tertiary: 	6px;
+
+// Font Size 
+$fontSize-primary:          1em; //16px
+$fontSize-secondary:        0.875em; //14px
+$fontSize-tertiary:         1.125em; //18px
+
+// Line Height
+$lineHeight-primary:        1em;
+$lineHeight-secondary:      1.5em;
+$lineHeight-tertiary:       2em;
+
+// Headings Fontsize
+$fontSize-body:             $fontSize-primary;
+$fontSize-h1:               $fontSize-body * 1.5;
+$fontSize-h2:               $fontSize-body * 1.25;
+$fontSize-h3:               $fontSize-body * 1.125;
+$fontSize-h4:               $fontSize-body;
+
+// Typography
+$fontFamily-base: 		    "BqFontProRegular", "Roboto", Arial, Sans-Serif;
+$fontFamily-base-bold:      "BqFontProBold", "Roboto", Arial, Sans-Serif;
+$fontFamily-base-light:     "BqFontProLight", "Roboto", Arial, Sans-Serif;
+$fontFamily-secondary:      "BqFontMonoRegular", "Roboto", Arial, Sans-Serif;
+
+//todo: cambiar por font-weight ¿?
+// Font Weight
+$fontFamily-light: 	        lighter;		
+$fontFamily-normal: 		normal;
+$fontFamily-bold: 			bold;
+
+// Breakpoints
+$screen-xs: 			    360;
+$screen-sm: 				768;
+$screen-md: 				1024;
+$screen-lg: 				1280;
+$screen-xlg: 				1600;
+$screen-xxlg:     			1920;
+
+
+
+/* TODO :: variables que vienen del repositorio de common que habrá que ver si se eliminan, de momento se dejan para que funcione el gulpfile  */
+
+$screen-xxs: 180;
+//$font-size-base : $fontSize-primary;
+// Components use
+$use-responsive: true !default;
+$use-sprites: false !default;
+$use-sprites-retina: false !default;
+$font-size-xxs: 18 !default;
+$font-size-xs: 13 !default;
+$font-size-sm: 13 !default;
+$font-size-md: 16 !default;
+$font-size-lg: 18 !default;
+$font-size-xlg: 20 !default;
+$font-size-base: 16 !default;
+$line-height-base: 18 !default;
+//Page margins
+$dim_col_1_29:      3.44%;
+$page-margin-xxs:   $dim_col_1_29;
+$page-margin-xs:    $dim_col_1_29;
+$page-margin-sm:    $dim_col_1_29;
+$page-margin-md:    $dim_col_1_29;
+$page-margin-lg:    $dim_col_1_29;
+$page-margin-xlg:   $dim_col_1_29;
+$page-margin-xxlg:  $dim_col_1_29;
+$img-xxs: 		320;
+$img-xs: 			480;
+$img-sm: 			720;
+$img-md: 			1024;
+$img-lg: 			1280;
+$img-xlg: 		1600;
+$img-xxlg:    920;
+// Borders, bg color
+$text-primary : $grey-primary;
+$border-color: #BFBFBF;
+$border-color-medium: $text-primary;
+$border-color-light: #E6E6E6;
+$bg-color: #F0F0F0;
+$border-radius: 5px;
+$border-section-color: $text-primary;
+$font-family-base: 		$fontFamily-base;
+$font-family-base-bold: $fontFamily-base-bold;
+$font-family-base-light: $fontFamily-base-light;
+$font-family-secondary: $fontFamily-secondary;
