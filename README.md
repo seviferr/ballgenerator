@@ -1,2 +1,2 @@
-# gulp-starter
-gulp-starter app repo
+# ballgenerator
+Generate Random balls and launch them
