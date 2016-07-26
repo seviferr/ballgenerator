@@ -30,7 +30,8 @@
 		this.posY=posY || 20;
 		this.speedX=speedX || Math.round(Math.random()*10 );
 		this.speedY=speedY || Math.round(Math.random()*10 ) - 5;
-		this.movement=movement || movements[Math.floor(Math.random() * movements.length)];
+		// this.movement=movement || movements[Math.floor(Math.random() * movements.length)];
+		this.movement="bounce";
 
 
 		this.init = function(){
@@ -302,8 +303,8 @@
 
 	inputWidth.addEventListener("change", function(){testball.updateWidth(parseInt(this.value))});
 	inputHeight.addEventListener("change", function(){testball.updateHeight(parseInt(this.value))});
-	inputSpeedX.addEventListener("change", function(){testball.updateSpeedX(this.value)});
-	inputSpeedY.addEventListener("change", function(){testball.updateSpeedY(this.value)});
+	inputSpeedX.addEventListener("change", function(){testball.updateSpeedX(parseInt(this.value))});
+	inputSpeedY.addEventListener("change", function(){testball.updateSpeedY(parseInt(this.value))});
 	inputColor.addEventListener("change", function(){testball.updateBgColor(this.value)});
 
 
